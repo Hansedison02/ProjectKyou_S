@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box ;
 }
 
 header
@@ -27,20 +27,6 @@ font-family: "Comfortaa";
     background-color: #ffffff;
 }
 
-p
-{
-    text-align: center;
-    font-size: 30px;
-    color: #fc4b03;
-}
-
-a
-{
-    text-align: center;
-    font-size: 30px;
-    color: #fc4b03;
-}
-
 .mascot{
     width: 140px;
     height: 70px;
@@ -52,7 +38,6 @@ a
     margin-left: 10px;
     margin-top: 10px;
 }
-
 
 .search-box{
     font-family: Century Gothic;
@@ -77,7 +62,8 @@ a
     width: 40px;
     height: 40px;
     background-color: #fc4c02;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
     margin-top: 10px;
     margin-left: 810px;
     border-radius: 0 10px 10px 0;
@@ -87,6 +73,8 @@ a
 {
     position: fixed;
     top: 20px;
+    width: 125%;
+    height: 125%;
     margin-left: 915px;
 }
 
@@ -94,6 +82,8 @@ a
 {
     position: fixed;
     top: 20px;
+    width: 125%;
+    height: 125%;
     margin-left: 965px;
 }
 
@@ -101,18 +91,11 @@ a
 {
     position: fixed;
     top: 20px;
+    width: 125%;
+    height: 125%;
     margin-left: 1015px;
 }
 
-.sign-in-btn
-{
-    color: #fc4b03;
-    font-size: 14px;
-    font-family: Century Gothic;
-    margin-left: 1115px;
-    top: 25px;
-    position: fixed;
-}
 div img
 {
     width: 100%;
@@ -129,14 +112,26 @@ div img
     top: 10px;
     position: fixed;
 }
+
+.sign-in-btn
+{
+    color: #fc4b03;
+    font-size: 14px;
+    font-family: Century Gothic;
+    margin-left: 1115px;
+    top: 25px;
+    position: fixed;
+}
+.card{
+    display: block;
+}
 .card2
 {
     position:relative;
-    align-self: center;
     width: 1100px;
     height: 200px;
-    bottom: 75px;
-    margin-left: 125px;
+    bottom: 350px;
+    left: 125px;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -148,14 +143,16 @@ div img
     font-weight:900;
     font-size: 24px;
     text-align: left;
-    padding-left: 40px;
+    margin-left: 40px;
     padding-top: 40px;
+    color: #fc4b03;
 
 }
-
 .text2
 {
     position:absolute;
+    display: block;
+    bottom: 60px;
     font-family: Comfortaa;
     font-weight:900;
     font-size: 21px;
@@ -163,20 +160,31 @@ div img
     left: 520px;
     bottom: 135px;
     color: #000000;
-    vertical-align: text-top;
+}
 
+.text3
+{
+    position:absolute;
+    font-family: Comfortaa;
+    font-size: 14px;
+    left: 520px;
+    bottom: 100px;
+    color: #808080;
+    vertical-align: text-top;
 }
 .urtick
 {
-    bottom: 45px;
-    left: 70px;
-    padding-left: 200px;
-    width: 20.5%;
+    bottom: 65px;
+    right: 40px;
+    width: 20px;
     height: auto;
 }
 
 label{
+    float: left;
     text-align: left;
+    bottom: 40px;
+    display:flex;
 }
 
 .stuff
@@ -185,22 +193,25 @@ label{
     font-family: Comfortaa;
     padding-left: 40px;
     display: block;
+    bottom: 40px;
 }
 
 .search-box2
 {
     font-family: Century Gothic;
-    font-size: 14px;
-    width: 400px;
+    font-size: 11px;
+    width: 350px;
     height: 40px;
     background-color: #ffffff;
-    margin-left: 40px;
     border: 1px;
     padding-left: 20px;
     padding-right: 40px;
     border-radius: 5px;
     border-color: #d1d3d4;
     border-style:solid;
+    position: relative;
+    display: block;
+    right: 275px;
 }
 
 .Border2
@@ -218,4 +229,47 @@ label{
 {
     color: #fc4b03;
     text-decoration: underline;
+}
+
+.carousel
+{
+    display: block;
+    bottom: 350px;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    position: relative;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-bottom: 40px;
+
+}
+
+.carousel-indicators
+{
+    position: absolute;
+}
+.carousel-inner img {
+    width: 30%;
+    height: auto;
+    display: block;
+    left: 405px;
+    border-radius: 40px;
+  }
+
+  .carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-control-prev
+{
+    opacity: 50%;
+}
+
+.carousel-control-prev:hover
+{
+    opacity: 100%;
+    transition: 0.3s ease;
 }

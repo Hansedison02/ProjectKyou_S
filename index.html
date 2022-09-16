@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="main.css">
 <link rel="shortcut icon" href="Assets/logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 <title>Kyou Hobby Shop - Anime Figure & Merchandise</title>
 </head>
 <body class="bg-color">
@@ -22,9 +26,38 @@
     <a class="sign-in-btn">Sign in</a>
     </header>
     <section>
-    <div class="card">
-    <img src="Assets/Banner-BG.png">
-    </div>
+        <div class="card">
+            <img src="Assets/Banner-BG.png">
+            </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Assets/Genshin1.webp" alt="" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="Assets/25Hours.webp" alt="" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="Assets/Elaina.webp" alt="" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="Assets/SnK1.webp" alt="" width="1100" height="500">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </section>
     <section>
     <div class="card2">
@@ -34,6 +67,7 @@
         <br>
         <input class="search-box2" type="text" name="name" id="name" placeholder="E.g. https://amiami.com/items/1525...">
         <p class="text2">Belanja barang dari Jepang semudah copy link!</p>
+        <p class="text3">Sekarang kamu bisa dapetin barang inceranmu dari Jepang, hanya dengan copas link dari Toko Jepang!</p>
         <div class="Border2"></div>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
